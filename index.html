@@ -1,112 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@daviddevgt</title>
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
-    <header class="header">
-        <a href="" class="logo">davidDevGt</a>
-        <i class='bx bx-menu' id="menu-btn"></i>
-        <nav class="menu-bar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+    <header>
+        <!-- navigation bar goes here -->
+        <nav>
+            <div class="logo">
+                <img src="/img/logodavidweb.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
         </nav>
+
     </header>
-
-    <section class="home" id="home">
-        <div class="home-bio">
-            <h3>This is</h3>
-            <h1>davidDevGt</h1>
-            <h3>I am a <span class="animated-text">Web Developer</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quis illum quam, praesentium quisquam perspiciatis quod, <br> odio veniam temporibus eaque blanditiis ad recusandae? Enim, asperiores tenetur nesciunt deleniti error aliquid?</p>
-            <div class="social-media">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-gmail'></i></a>
+    <main>
+        <!-- about section goes here -->
+        <section class="about">
+            <div class="container">
+                <h1>David Vargas</h1>
+                <p>Web Designer & Developer</p>
+                <img src="/img/me.png" alt="Mi Foto">
             </div>
-            <a href="#contact" class="btn">Let's Talk</a>
+        </section>
+
+        <!-- skills section goes here -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <ul class="boxicons">
+                    <li><i class='bx bxl-html5'></i> HTML</li>
+                    <li><i class='bx bxl-css3'></i> CSS</li>
+                    <li><i class='bx bxl-javascript'></i> JavaScript</li>
+                    <li><i class='bx bxl-wordpress'></i> Wordpress</li>
+                    <li><i class='bx bxl-figma'></i>Figma</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- projects section goes here -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <div class="project-card">
+                    <h3>Ferreteria Dismafer</h3>
+                    <p>Creación de la tienda online para Ferretería Dismafer</p>
+                    <img src="/img/portfolio/dismafer.png" target="_blank" alt="Proyecto 1">
+                    <a href="https://dismafer.shop/" class="btn">Ver Proyecto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Ferreteria Shama</h3>
+                    <p>Landing Page para Ferretería Shama</p>
+                    <img src="/img/portfolio/fshama.png" alt="Proyecto 2">
+                    <a href="https://fshama.netlify.app/" target="_blank" class="btn">Ver Proyecto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Refined Brils</h3>
+                    <p>Cátalogo Online para Refined Brils</p>
+                    <img src="/img/portfolio/refined.png" alt="Proyecto 3">
+                    <a href="https://refinedbrils.company.site/" target="_blank" class="btn">Ver Proyecto</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container" id="contact">
+            <!-- social media icons go here -->
+            <ul class="boxicons">
+                <li><a href="https://www.linkedin.com/in/jdavidvl/"><i class='bx bxl-linkedin'></i> </a></li>
+                <li><a href="https://github.com/DavidDevGt"><i class='bx bxl-github'></i> </a></li>
+                <li><a href="https://www.instagram.com/davidwebgt/"><i class='bx bxl-instagram'></i> </a></li>
+            </ul>
         </div>
-        <div class="profile-pic">
-            <img src="img/me.png" alt="Profile photo">
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="heading">
-            <h2>About <span>Me</span></h2>
-        </div>
-
-        <div class="about-items">
-            <div class="about-resume">
-                <h3>Web Designer & Developer</h3>
-                <a href="#" class="btn">Download Resume</a>
-            </div>
-        </div>
-
-        <div class="about-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga est laboriosam rerum vitae voluptas dolore cum incidunt nesciunt saepe quae pariatur odio voluptates eaque, dignissimos ducimus autem. Molestiae itaque ab laborum cum neque, quas
-                <br> obcaecati, eius dolores nostrum, omnis magni culpa. Id error fuga, pariatur cupiditate sed quibusdam ipsa, corrupti odio eveniet consequuntur dolor eum sint magnam, officia eius architecto.</p>
-        </div>
-    </section>
-
-
-    <section class="skills">
-        <div class="heading">
-            <h2>My <span>Skills</span></h2>
-        </div>
-
-        <div class="skills-item">
-
-            <div class="skill-card">
-                <i class="bx bxl-html5"></i>
-                <h3>HTML</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nostrum?</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="bx bxl-css3"></i>
-                <h3>CSS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nostrum?</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="bx bxl-javascript"></i>
-                <h3>JavaScript</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nostrum?</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="bx bxl-wordpress"></i>
-                <h3>Wordpress</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nostrum?</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="bx bxl-figma"></i>
-                <h3>Figma</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nostrum?</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="bx bxl-python"></i>
-                <h3>Python</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nostrum?</p>
-            </div>
-
-        </div>
-    </section>
-
+    </footer>
 </body>
 
 </html>
